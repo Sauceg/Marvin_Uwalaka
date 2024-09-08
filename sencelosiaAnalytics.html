@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="change.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <title>Sencelosia Analytics</title>
+  <style>
+    .back {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+        text-decoration: none; /* Remove underline */
+        color: white; /* Link color */
+        font-size: 20px; /* Adjust size if needed */
+        padding-left: 15px; /* Padding on the left */
+        padding-top: 5px; /* Padding on the top */
+        transition: 0.2s;
+    }
+    .back:hover{
+     transform: scale(1.2);
+    }
+    /* The grid: Four equal columns that float next to each other */
+ /* Container for the row of images */
+     .row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px; /* Space between the row and the main image */
+        }
+
+        /* Columns in the row */
+        .column {
+            flex: 1; /* Distribute space evenly */
+            padding: 5px; /* Space around images */
+        }
+
+        /* Ensure images fit within columns */
+        .column img {
+            opacity: 0.8;
+            width: 100%; /* Responsive width */
+            cursor: pointer; /* Pointer cursor for clickable images */
+            max-height: 150px;
+        }
+
+        .column img:hover{
+          opacity: 1;
+        }
+
+        /* Container for the main image */
+        .main {
+            text-align: center; /* Center the main image */
+        }
+
+        /* Main expanded image */
+        .main img {
+            max-width: 100%; /* Responsive width */
+            height: auto; /* Maintain aspect ratio */
+        }
+    /* Expanding image text */
+
+  </style>
+</head>
+<div class = "back"> 
+    <a href="index.html" class="back" title="Go back">
+       <i class="bi bi-arrow-left"></i>
+    </a>
+</div>
+<body>
+    <div class="grid-container">
+        <!-- Sidebar -->
+        <nav class="marvin sidebar">
+            <div class="pp container">
+                <img src="pp.jpeg"  class="profile photo"><br><br>
+                <h4><b>Marvin Uwalaka</b></h4>
+                <p class="purple">I like purple</p>
+            </div>
+            <div class="page guide">
+              <a href="index.html#Projects">Projects</a>
+              <a href="index.html#AboutMe">About Me</a>
+              <a href="index.html#skills">Skills</a>
+              <a href="index.html#Contacts">Contacts</a>
+          </div>
+            <div class="links">
+                <i class="linkedin"></i>
+                <i class="github"></i>
+            </div>
+            <div class="social links">
+                <a href="https://github.com/Sauceg" class="icon-link" title="GitHub">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/marvin-uwalaka-99a7b5239" class="icon-link" target="_blank" title="LinkedIn">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </div>
+
+            <div class = "cc">
+                <p> © Marvin C. Uwalaka</p>
+            </div>
+        </nav>
+    <div class = "main-content">
+    <h1>Sencelosia Analytics</h1>
+  <!-- The grid: four columns -->
+    <div class="row">
+            <div class="column">
+            <img src="Geo-Tracker.png" alt="Geo-Tracker" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+            <img src="Sales.png" alt="Sales" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+            <img src="Traffic.png" alt="Traffic" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+            <img src="Traffic Source.png" alt="Device Source" onclick="myFunction(this);">
+            </div>
+        </div>
+        
+        <!-- The expanding image container -->
+        <div class="main">
+            <!-- Expanded image -->
+            <img src="Geo-Tracker.png" id="expandedImg" style="width:70%">
+        </div>
+    </div>
+  <script>
+    function myFunction(imgs) {
+      // Get the expanded image
+      var expandImg = document.getElementById("expandedImg");
+      // Get the image text
+      var imgText = document.getElementById("imgtext");
+      // Use the same src in the expanded image as the image being clicked on from the grid
+      expandImg.src = imgs.src;
+     
+    }
+  </script>
+
+</body>
+</html>
