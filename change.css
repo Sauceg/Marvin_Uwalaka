@@ -105,6 +105,9 @@ nav .cc{
     }
 
 /* Social media links in sidebar */
+.links{
+    padding-top: 20px;
+}
 .links i {
     font-size: 1.5rem;
     margin-right: 15px;               /* Space between icons */

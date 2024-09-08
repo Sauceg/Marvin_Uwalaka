@@ -81,10 +81,7 @@
               <a href="index.html#skills">Skills</a>
               <a href="index.html#contacts">Contacts</a>
           </div>
-            <div class="links">
-                <i class="linkedin"></i>
-                <i class="github"></i>
-            </div>
+        
             <div class="social links">
                 <a href="https://github.com/Sauceg" class="icon-link" title="GitHub">
                     <i class="bi bi-github"></i>
@@ -103,7 +100,7 @@
   <!-- The grid: four columns -->
     <div class="row">
             <div class="column">
-            <img src="Geo-Tracker.png" alt="Geo-Tracker" onclick="myFunction(this);">
+            <img id= "first" src="Geo-Tracker.png" alt="Geo-Tracker" onclick="myFunction(this);">
             </div>
             <div class="column">
             <img src="Sales.png" alt="Sales" onclick="myFunction(this);">
@@ -123,6 +120,7 @@
         </div>
     </div>
   <script>
+
     function myFunction(imgs) {
       // Get the expanded image
       var expandImg = document.getElementById("expandedImg");
