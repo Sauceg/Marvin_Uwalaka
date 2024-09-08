@@ -21,14 +21,13 @@
     .back:hover{
      transform: scale(1.2);
     }
-    video {
-            width: 100%; /* Make the video responsive */
-            max-width: 90%; /* Set a maximum width */
+    iframe {
+            max-width: 800px; /* Set a maximum width */
             border-radius: 10px; /* Round the corners */
             display: block; /* Ensures the video is a block element */
             margin: 20px auto; /* Center the video */
-            object-fit: contain;
-            height: auto;
+            max-height: 600px;
+        
         }
   </style>
 </head>
@@ -71,8 +70,5 @@
         </nav>
     <div class = "main-content">
         <h1>Wiki</h1>
-        <video width="640" height="360" autoplay controls>
-            <source src="wikiDemo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/l7HX1DS-a3U?si=D1V0gCl-fZ-c4xox" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
