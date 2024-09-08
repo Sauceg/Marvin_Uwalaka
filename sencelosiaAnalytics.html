@@ -11,35 +11,34 @@
         display: inline-flex;
         align-items: center;
         cursor: pointer;
-        text-decoration: none; /* Remove underline */
-        color: white; /* Link color */
-        font-size: 20px; /* Adjust size if needed */
-        padding-left: 15px; /* Padding on the left */
-        padding-top: 5px; /* Padding on the top */
+        text-decoration: none;
+        color: white; 
+        font-size: 20px;
+        padding-left: 15px; 
+        padding-top: 5px; 
         transition: 0.2s;
     }
     .back:hover{
      transform: scale(1.2);
     }
-    /* The grid: Four equal columns that float next to each other */
- /* Container for the row of images */
+
      .row {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 20px; /* Space between the row and the main image */
+            margin-bottom: 20px;
         }
 
-        /* Columns in the row */
+       
         .column {
-            flex: 1; /* Distribute space evenly */
-            padding: 5px; /* Space around images */
+            flex: 1;
+            padding: 5px;
         }
 
-        /* Ensure images fit within columns */
+      
         .column img {
             opacity: 0.8;
-            width: 100%; /* Responsive width */
-            cursor: pointer; /* Pointer cursor for clickable images */
+            width: 100%; 
+            cursor: pointer; 
             max-height: 150px;
         }
 
@@ -47,17 +46,17 @@
           opacity: 1;
         }
 
-        /* Container for the main image */
+       
         .main {
-            text-align: center; /* Center the main image */
+            text-align: center;
         }
 
-        /* Main expanded image */
+        
         .main img {
-            max-width: 100%; /* Responsive width */
-            height: auto; /* Maintain aspect ratio */
+            max-width: 100%;
+            height: auto; 
         }
-    /* Expanding image text */
+    
 
   </style>
 </head>
@@ -68,7 +67,7 @@
 </div>
 <body>
     <div class="grid-container">
-        <!-- Sidebar -->
+  
         <nav class="marvin sidebar">
             <div class="pp container">
                 <img src="pp.jpeg"  class="profile photo"><br><br>
@@ -97,7 +96,7 @@
         </nav>
     <div class = "main-content">
     <h1>Sencelosia Analytics</h1>
-  <!-- The grid: four columns -->
+
     <div class="row">
             <div class="column">
             <img id= "first" src="Geo-Tracker.png" alt="Geo-Tracker" onclick="myFunction(this);">
@@ -113,7 +112,7 @@
             </div>
         </div>
         
-        <!-- The expanding image container -->
+      
         <div class="main">
             <!-- Expanded image -->
             <img src="Geo-Tracker.png" id="expandedImg" style="width:70%">

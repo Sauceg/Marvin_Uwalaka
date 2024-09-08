@@ -1,10 +1,9 @@
 html, body {
-    height: 100%; /* Ensure html and body are full height */
-    margin: 0;    /* Remove default margin */
+    height: 100%;
+    margin: 0;
     background: rgb(68,65,152);
     background: linear-gradient(90deg, rgba(68,65,152,1) 0%, rgba(57,55,128,1) 12%, rgba(60,54,116,1) 48%, rgba(42,49,95,1) 78%, rgba(26,32,75,1) 96%);
-    }
-
+}
 
 .hidden{
     position: sticky;
@@ -14,56 +13,52 @@ html, body {
     top: 0;
     z-index: 5;
     height: 25px;
-    }
-/* General container styles */
+}
+
 .grid-container {
     display: grid;
-    grid-template-columns: 250px 1fr; /* Sidebar 250px wide, main content takes up remaining space */
-    grid-gap: 20px;                   /* Space between sidebar and main content */
+    grid-template-columns: 250px 1fr;
+    grid-gap: 20px;
     padding: 20px;
-    /* Remove default margin */
-    min-height: 100vh;                /* Ensure the container covers the full height of the viewport */
-    }
+    min-height: 100vh;
+}
+
 .main-content h1{
-    font-size: 2em; /* Adjust the font size as needed */
-    font-weight: bold; /* Make the text bold */
-    color: whitesmoke; 
-    border-bottom: 2px solid  red;
-    text-align: center;   
-    padding-bottom: 10px;     
-    }
+    font-size: 2em;
+    font-weight: bold;
+    color: whitesmoke;
+    border-bottom: 2px solid red;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
 .main-content p{
-    color: whitesmoke; 
-    text-align: center;     
-    }
+    color: whitesmoke;
+    text-align: center;
+}
 
-
-
-
-/* Sidebar styles */
 .marvin.sidebar {
-    background-color: #333;           /* Dark background for the sidebar */
-    color: #fff;                      /* White text color */
+    background-color: #333;
+    color: #fff;
     padding: 20px;
-    border-radius: 10px;              /* Rounded corners */
+    border-radius: 10px;
     height: 90vh;
     position: sticky;
     top: 25px;
-    }
+}
 
-/* Profile picture in sidebar */
 .profile.photo {
-    width: 70%;                      /* Ensure profile image is responsive within the sidebar */
-    border-radius: 50%;               /* Make the profile image circular */
-    margin-bottom: 20px;              /* Space below the image */
+    width: 70%;
+    border-radius: 50%;
+    margin-bottom: 20px;
     position: relative;
     left: 50%;
     transform: translate(-50%);
-    }
+}
 
 nav .container{
     position: relative;
-    }
+}
 
 nav .cc{
     position:absolute;
@@ -71,63 +66,59 @@ nav .cc{
     left:50%;
     transform: translate(-50%);
     width:100%;
-    }
+}
 
 .cc p{ 
     text-align: center;
 }
-/* Sidebar heading */
+
 .marvin.sidebar h4 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    }
+}
 
-/* Sidebar description */
 .purple {
-    color: #a29bfe;                   /* Light purple text */
+    color: #a29bfe;
     font-style: italic;
-    margin-bottom: 20px;              /* Space below the description */
-    }
+    margin-bottom: 20px;
+}
 
-/* Navigation links in sidebar */
 .page.guide a {
     display: block;
     color: #fff;
     text-decoration: none;
     padding: 10px 0;
     font-size: 1.1rem;
-    border-bottom: 1px solid #444;    /* Add a border below each link */
-    transition: background-color 0.3s; /* Smooth transition for background color on hover */
-    }
+    border-bottom: 1px solid #444;
+    transition: background-color 0.3s;
+}
 
 .page.guide a:hover {
-    background-color: #444;           /* Darken the background on hover */
-    }
+    background-color: #444;
+}
 
-/* Social media links in sidebar */
 .links{
     padding-top: 20px;
 }
+
 .links i {
     font-size: 1.5rem;
-    margin-right: 15px;               /* Space between icons */
-    color: #a29bfe;                   /* Light purple color for icons */
+    margin-right: 15px;
+    color: #a29bfe;
     cursor: pointer;
-    }
+}
 
 .links i:hover {
-    color: #6c5ce7;                   /* Darker purple on hover */
-    }
+    color: #6c5ce7;
+}
 
-/* Main content styles */
 .main-content section {
     padding: 20px;
     margin-bottom:20px;
-    background-color: #333;           /* White background for the main content */
-    border-radius: 10px;              /* Rounded corners */
-    }
+    background-color: #333;
+    border-radius: 10px;
+}
 
-/* Styling for project buttons in the main content */
 .Projects.filter button {
     margin-right: 10px;
     margin-bottom: 10px;
@@ -135,34 +126,31 @@ nav .cc{
     border-radius: 5px;
     border: 1px solid #ccc;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s; /* Smooth transitions for color changes */
-    }
+    transition: background-color 0.3s, color 0.3s;
+}
 
 .Projects.filter button:hover {
     background-color: #333;
     color: #fff;
-    }
-
-
+}
 
 .projects.container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-auto-rows: minmax(500px, 500px);
-    gap: 20px; /* Adjust the spacing between grid items */
+    gap: 20px;
     padding: 20px;
-    }
-
+}
 
 .project {
-    background-color: #706d6d42; /* Optional: Add a background color to grid items */
+    background-color: #706d6d42;
     padding: 10px;
-    text-align: center; /* Center align the content within each grid item */
-    border-radius: 8px; /* Optional: Add rounded corners */
+    text-align: center;
+    border-radius: 8px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease;
     position: relative;
-    }
+}
 
 .projects.container img {
     padding-top: 10px;
@@ -170,24 +158,24 @@ nav .cc{
     height: auto;
     display: block;
     margin: 0 auto;
-    }
+}
 
 .project:hover {
     transform: scale(0.95);
-    }
+}
 
 .project h2 {
     font-size: 1.5em;
     margin-top: 15px;
-    color: whitesmoke
-    }
+    color: whitesmoke;
+}
 
 .project p {
     font-size: 1em;
     margin: 15px 0;
     color: whitesmoke;
     line-height: 1.4;
-    }
+}
 
 .project-buttons{
     position:absolute;
@@ -195,131 +183,131 @@ nav .cc{
     bottom:0;
     left:50%;
     transform: translate(-50%);
-    }
+}
 
 .project-buttons a {
     text-decoration: none;
-    padding: 10px 20px; /* Added padding for a button-like appearance */
-    display: inline-block; /* Make the links behave like buttons */
-    margin: 5px; /* Space between the links */
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
-    }
+}
 
 .project-buttons .github {
     color: #6c5ce7;
     border: 1px solid #6c5ce7;
     border-radius: 10px;
-    }
+}
 
 .project-buttons .demo {
     color: red;
     border: 1px solid red;
     border-radius: 10px;
-    }
+}
 
 .project-buttons .github:hover {
     background-color: #6c5ce7;
-    color: white; /* Change text color on hover */
-    }
+    color: white;
+}
 
 .project-buttons .demo:hover {
     background-color: red;
-    color: white; /* Change text color on hover */
-    }
+    color: white;
+}
 
 #skills {
     padding: 50px;
     background-color:#333;
     text-align: center;
-    }
+}
 
 #skills h1 {
     font-size: 36px;
     margin-bottom: 20px;
     color: whitesmoke;
-    }
+}
 
 .skills, .aboutcontainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     justify-items: center;
-    }
+}
 
 .skills div {
-    background-color:  #706d6d42;;
+    background-color:  #706d6d42;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease-in-out;
-    }
+}
 
 .skills div:hover {
     transform: translateY(-10px);
-    }
+}
 
 .skills img {
     max-width: 80px;
-    height: 80px; /* Ensures all images have the same height */
+    height: 80px;
     margin-bottom: 15px;
-    object-fit: contain; /* Ensures the image scales well without distortion */
-    }
+    object-fit: contain;
+}
 
 .skills p {
     font-size: 16px;
     color: whitesmoke;
     line-height: 1.5;
-    }
+}
 
 .bio, .mission, .contact-grid a{
-    background-color:  #706d6d42;;
+    background-color:  #706d6d42;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     padding: 20px;
     margin: 10px;
     color: whitesmoke;
-    }
+}
+
 .bio p, .mission p{
     line-height: 1.5;
-    text-align:left; 
-
+    text-align:left;
 }
 
 .aboutcontainer {
     display: grid;
     grid-template-columns: 1fr 3fr;
     justify-items: center;
-    }
+}
 
 .bio h3 , .mission h3{
-    text-align:center; 
+    text-align:center;
     font-size: 1.5em;
     padding-bottom: 5px;
     border-bottom: 2px dashed whitesmoke;
-    }
-
+}
 
 #contacts h3{
     text-align: center;
     color: whitesmoke;
-
-    }
+}
 
 .contact-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     margin-bottom: 5%;
     transition: background-color 0.7s;
-    }
+}
 
 .contact-grid i{
     color: white;
     font-size: 3em;
-    }
+}
+
 .contact-grid p{
     font-size: 2vb;
-    }
+}
+
 .contact-grid a{
     text-align: center;
     text-decoration: none;
@@ -328,37 +316,36 @@ nav .cc{
 .contact-grid a:hover{
     background-color:#6c5ce7;
     transform: scale(1.05);
-    }
+}
 
-
-/* Responsive design: Stack sidebar and main content on smaller screens */
 @media (max-width: 768px) {
 .grid-container {
-    grid-template-columns: 1fr; /* Stack sidebar and main content vertically */
-    }
+    grid-template-columns: 1fr;
+}
 
 .profile.photo {
-    width: 20%;                      /* Ensure profile image is responsive within the sidebar */
-    border-radius: 50%;               /* Make the profile image circular */
-    margin-bottom: 20px;              /* Space below the image */
+    width: 20%;
+    border-radius: 50%;
+    margin-bottom: 20px;
     position: relative;
     left: 50%;
     transform: translate(-50%);
-
-    }
+}
 
 .marvin.sidebar {
-    margin-bottom: 20px; /* Space below the sidebar when stacked */
+    margin-bottom: 20px;
     position: relative;
-    }
+}
+
 .aboutcontainer {
     grid-template-columns: 1fr;
-    }
+}
+
 .project-buttons a {
     text-decoration: none;
-    padding: 5px 8px; /* Added padding for a button-like appearance */
-    display: inline-block; /* Make the links behave like buttons */
-    margin: 2px; /* Space between the links */
+    padding: 5px 8px;
+    display: inline-block;
+    margin: 2px;
     transition: background-color 0.3s ease, color 0.3s ease;
-    }
+}
 }
