@@ -269,12 +269,12 @@ nav .cc{
     line-height: 1.5;
     }
 
-.bio, .mission, .contact.grid div {
+.bio, .mission, .contact-grid a{
     background-color:  #706d6d42;;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     padding: 20px;
-    margin: 15px;
+    margin: 10px;
     color: whitesmoke;
     }
 .bio p, .mission p{
@@ -286,7 +286,6 @@ nav .cc{
 .aboutcontainer {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    gap: 20px;
     justify-items: center;
     }
 
@@ -304,22 +303,26 @@ nav .cc{
 
     }
 
-.contact.grid {
+.contact-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     margin-bottom: 5%;
     transition: background-color 0.7s;
     }
-.contact.grid div{
-    text-align: center;
-    width: 85%;
-    }
-.contact.grid i{
-    font-size: 3rem;
-    }
 
-.contact.grid :hover{
+.contact-grid i{
+    color: white;
+    font-size: 3em;
+    }
+.contact-grid p{
+    font-size: 2vb;
+    }
+.contact-grid a{
+    text-align: center;
+    text-decoration: none;
+}
+
+.contact-grid a:hover{
     background-color:#6c5ce7;
     transform: scale(1.05);
     }
@@ -348,5 +351,11 @@ nav .cc{
 .aboutcontainer {
     grid-template-columns: 1fr;
     }
-
+.project-buttons a {
+    text-decoration: none;
+    padding: 5px 8px; /* Added padding for a button-like appearance */
+    display: inline-block; /* Make the links behave like buttons */
+    margin: 2px; /* Space between the links */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    }
 }
