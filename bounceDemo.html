@@ -22,11 +22,22 @@
      transform: scale(1.2);
     }
     iframe {
-            max-width: 800px; /* Set a maximum width */
+            width:600px;
+            height: 400px;
             border-radius: 10px; /* Round the corners */
             display: block; /* Ensures the video is a block element */
             margin: 20px auto; /* Center the video */
         }
+        
+    @media (max-width: 768px) {
+        iframe {
+            width:400px;
+            height: 300px;
+            border-radius: 10px; /* Round the corners */
+            display: block; /* Ensures the video is a block element */
+            margin: 20px auto; /* Center the video */
+        }
+    }
   </style>
 </head>
 <div class = "back"> 
@@ -68,6 +79,8 @@
         </nav>
     <div class = "main-content">
         <h1>Bounce</h1>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/m2mTa2LkmuQ?si=HehtdFGtzSlc-HYR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+        <iframe  src="https://www.youtube.com/embed/m2mTa2LkmuQ?si=HehtdFGtzSlc-HYR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
+    </div>
+</body>
+</html>
